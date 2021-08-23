@@ -115,4 +115,4 @@ classRoster.remove("A3");
 //expected: the above line should print a message saying such a student
 with this ID was not found.
 5. Implement the destructor to release the memory that was allocated dynamically in Roster.
-G. Demonstrate professional communica�on in the content and presenta�on of your submission.
+G. Demonstrate professional communication in the content and presentation of your submission.
