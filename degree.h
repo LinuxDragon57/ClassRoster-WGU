@@ -1,5 +1,5 @@
 //
-// Created by deblad on 8/9/21.
+// Created by Tyler Gautney on 8/9/21.
 //
 
 #ifndef CLASSROSTER_DEGREE_H

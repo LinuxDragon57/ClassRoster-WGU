@@ -14,6 +14,16 @@ int main()
 
     Roster classRoster{};
     // Add each student to classRoster
+    /*
+    const string studentData[] =
+            {"A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
+             "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
+             "A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
+             "A4,Erin,Black,Erin.black@comcast.net,22,50,48,40,SECURITY",
+             "A5,Tyler,Gautney,tyler.gautney@codedragon.dev,22,30,35,40,SOFTWARE"
+            };
+   */
+    // For now, for debugging purposes, pass the data like this.x
     classRoster.add((string &) "A1", (string&) "John", (string&) "Smith", (string&) "John1989@gm ail.com", 20, 30, 35, 40, SECURITY);
     classRoster.add((string&) "A2", (string&) "Suzan", (string&) "Erickson", (string&) "Erickson_1990@gmailcom", 19, 50, 30, 40, NETWORK);
     classRoster.add((string&)"A3", (string&) "Jack", (string&) "Napoli", (string&) "The_lawyer99yahoo.com", 19, 20, 40, 33, SOFTWARE);
