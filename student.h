@@ -13,9 +13,10 @@ public:
 
     //The following functions are the default constructor, overloaded constructor, and the destructor - respectively.
     Student();
-    Student(string&, string&, string&, string&, int, int[3], DegreeProgram);
+    Student(string&, string&, string&, string&, int, int*, DegreeProgram);
 
-    //The following are mutators for each instance variable
+
+//The following are mutators for each instance variable
     void setStudentID(const string&);
     void setFirstName(const string&);
     void setLastName(const string&);

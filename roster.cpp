@@ -37,14 +37,14 @@ void Roster::add(string& studentID, string& firstName, string& lastName, string&
      * Then, for the rest of the parameters (and the newly constructed daysInCourseArray[]), it instantiates a new
      * Student class that is intended to be added to the classRosterArray of pointers. */
     int daysInCourseArray[3] = {daysInCourse1, daysInCourse2, daysInCourse3};
-    Student addStudent(studentID, firstName, lastName, emailAddress, age, daysInCourseArray, degreeProgram);
+    auto *addStudent = new Student(studentID, firstName, lastName, emailAddress, age, daysInCourseArray, degreeProgram);
 
     /* The function treats the roster like a stack. rosterIndex points to a different index in the classRosterArray
      * each time the function is run. rosterIndex starts at -1, as defined by the constructor, and this function
      * increments it to 0 before performing an operation using the local student instance variable. The next time the
      * function is run, rosterIndex should still be pointing to 0, and so the function will increment it once again to 1.
      * This creates an iterable approach despite the asynchronous connections to the function each time. */
-    if (rosterIndex - 1 < 5) *classRosterArray[++rosterIndex] = addStudent;
+    if (rosterIndex - 1 < 5) *classRosterArray[++rosterIndex] = *addStudent;
 }
 
 
@@ -181,6 +181,6 @@ int Roster::getByID(const string& studentID)
 
 string Roster::getStudentObject(const int classRosterArrayIndex)
 {
-    // Return the student located at the given index as specified by the function parameter.
+    // Return the student object located at the given index as specified by the function parameter.
     return classRosterArray[classRosterArrayIndex]->getStudentID();
 }
