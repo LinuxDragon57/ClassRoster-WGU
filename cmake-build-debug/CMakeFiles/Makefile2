@@ -54,10 +54,10 @@ RM = /home/deblad/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deblad/Programming/Computer_Science/ClassRoster
+CMAKE_SOURCE_DIR = /home/deblad/Projects/ClassRoster-WGU
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug
+CMAKE_BINARY_DIR = /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/ClassRoster.dir/clean
 CMakeFiles/ClassRoster.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClassRoster.dir/build.make CMakeFiles/ClassRoster.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClassRoster.dir/build.make CMakeFiles/ClassRoster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target ClassRoster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target ClassRoster"
 .PHONY : CMakeFiles/ClassRoster.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ClassRoster.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ClassRoster.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ClassRoster.dir/rule
 
 # Convenience name for target.

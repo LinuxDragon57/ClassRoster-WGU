@@ -13,14 +13,14 @@ public:
 
     //The following functions are the default constructor, overloaded constructor, and the destructor - respectively.
     Student();
-    Student(string&, string&, string&, string&, int, int*, DegreeProgram);
+    Student(string, string, string, string, int, int*, DegreeProgram);
 
 
 //The following are mutators for each instance variable
-    void setStudentID(const string&);
-    void setFirstName(const string&);
-    void setLastName(const string&);
-    void setEmail(const string&);
+    void setStudentID(string);
+    void setFirstName(string);
+    void setLastName(string);
+    void setEmail(string);
     void setAge(int);
     void setDaysInCourse(const int[3]);
     void setDegreeProgram(DegreeProgram);
@@ -32,7 +32,7 @@ public:
     string getEmail() const;
     unsigned int getAge() const;
     int getAverageDaysInCourse() const;
-    int getDaysInCourse() const;
+    int getDaysInCourse(unsigned int) const;
     DegreeProgram getDegreeProgram() const;
 
     //The print function that does nothing but merely print the instance's values to standard output.

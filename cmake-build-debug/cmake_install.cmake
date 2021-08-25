@@ -1,4 +1,4 @@
-# Install script for directory: /home/deblad/Programming/Computer_Science/ClassRoster
+# Install script for directory: /home/deblad/Projects/ClassRoster-WGU
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

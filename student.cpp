@@ -3,6 +3,7 @@
 //
 #include<iostream>
 #include<string>
+#include <utility>
 #include "student.h"
 using namespace std;
 
@@ -23,13 +24,13 @@ Student::Student()
 
 
 //overloaded constructor
-Student::Student(string& studentID, string& firstName, string& lastName, string& email,
+Student::Student(string studentID, string firstName, string lastName, string email,
                               int age, int daysInCourse[3], DegreeProgram degree)
 {
-    setStudentID(studentID);
-    setFirstName(firstName);
-    setLastName(lastName);
-    setEmail(email);
+    setStudentID(std::move(studentID));
+    setFirstName(std::move(firstName));
+    setLastName(std::move(lastName));
+    setEmail(std::move(email));
     setAge(age);
     setDaysInCourse(daysInCourse);
     setDegreeProgram(degree);
@@ -37,27 +38,27 @@ Student::Student(string& studentID, string& firstName, string& lastName, string&
 
 
 //Class Mutators for each variable
-void Student::setStudentID(const string& newID)
+void Student::setStudentID(string newID)
 {
-    this -> studentID = newID;
+    this -> studentID = std::move(newID);
 }
 
 
-void Student::setFirstName(const string& newFirstName)
+void Student::setFirstName(string newFirstName)
 {
-    this -> firstName = newFirstName;
+    this -> firstName = std::move(newFirstName);
 }
 
 
-void Student::setLastName(const string& newLastName)
+void Student::setLastName(string newLastName)
 {
-    this -> lastName = newLastName;
+    this -> lastName = std::move(newLastName);
 }
 
 
-void Student::setEmail(const string& newEmail)
+void Student::setEmail(string newEmail)
 {
-    this -> email = newEmail;
+    this -> email = std::move(newEmail);
 }
 
 
@@ -119,9 +120,9 @@ int Student::getAverageDaysInCourse() const
     return averageDaysInCourse;
 }
 
-int Student::getDaysInCourse() const
+int Student::getDaysInCourse(unsigned int index) const
 {
-    return *daysInCourse;
+    return daysInCourse[index];
 }
 
 
@@ -137,6 +138,8 @@ void Student::print() const
     cout << "First Name: " << getFirstName() << "\t";
     cout << "Last Name: " << getLastName() << "\t";
     cout << "Age: " << getAge() << "\t";
-    cout << "daysInCourse: " << getDaysInCourse() << "\t";
+    cout << "daysInCourse: {";
+    for (int i=0; i<3; i++) cout << getDaysInCourse(i) << ',';
+    cout <<"}\t";
     cout << "Degree Program: " << getDegreeProgram() << "\n\n";
 }

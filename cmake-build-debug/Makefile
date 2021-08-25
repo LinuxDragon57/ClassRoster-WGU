@@ -57,10 +57,10 @@ RM = /home/deblad/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deblad/Programming/Computer_Science/ClassRoster
+CMAKE_SOURCE_DIR = /home/deblad/Projects/ClassRoster-WGU
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug
+CMAKE_BINARY_DIR = /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

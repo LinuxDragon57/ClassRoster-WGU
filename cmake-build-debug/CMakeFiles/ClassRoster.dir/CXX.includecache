@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/deblad/Programming/Computer_Science/ClassRoster/degree.h
+/home/deblad/Projects/ClassRoster-WGU/degree.h
 
-/home/deblad/Programming/Computer_Science/ClassRoster/main.cpp
+/home/deblad/Projects/ClassRoster-WGU/main.cpp
 iostream
 -
 string
 -
 roster.h
-/home/deblad/Programming/Computer_Science/ClassRoster/roster.h
+/home/deblad/Projects/ClassRoster-WGU/roster.h
 
-/home/deblad/Programming/Computer_Science/ClassRoster/roster.cpp
+/home/deblad/Projects/ClassRoster-WGU/roster.cpp
 iostream
 -
 string
@@ -28,31 +28,31 @@ stdexcept
 stack
 -
 roster.h
-/home/deblad/Programming/Computer_Science/ClassRoster/roster.h
+/home/deblad/Projects/ClassRoster-WGU/roster.h
 degree.h
-/home/deblad/Programming/Computer_Science/ClassRoster/degree.h
+/home/deblad/Projects/ClassRoster-WGU/degree.h
 student.h
-/home/deblad/Programming/Computer_Science/ClassRoster/student.h
+/home/deblad/Projects/ClassRoster-WGU/student.h
 
-/home/deblad/Programming/Computer_Science/ClassRoster/roster.h
+/home/deblad/Projects/ClassRoster-WGU/roster.h
 string
 -
 degree.h
-/home/deblad/Programming/Computer_Science/ClassRoster/degree.h
+/home/deblad/Projects/ClassRoster-WGU/degree.h
 student.h
-/home/deblad/Programming/Computer_Science/ClassRoster/student.h
+/home/deblad/Projects/ClassRoster-WGU/student.h
 
-/home/deblad/Programming/Computer_Science/ClassRoster/student.cpp
+/home/deblad/Projects/ClassRoster-WGU/student.cpp
 iostream
 -
 string
 -
 student.h
-/home/deblad/Programming/Computer_Science/ClassRoster/student.h
+/home/deblad/Projects/ClassRoster-WGU/student.h
 
-/home/deblad/Programming/Computer_Science/ClassRoster/student.h
+/home/deblad/Projects/ClassRoster-WGU/student.h
 string
 -
 degree.h
-/home/deblad/Programming/Computer_Science/ClassRoster/degree.h
+/home/deblad/Projects/ClassRoster-WGU/degree.h
 

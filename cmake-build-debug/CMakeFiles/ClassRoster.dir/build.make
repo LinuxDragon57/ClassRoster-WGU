@@ -53,10 +53,10 @@ RM = /home/deblad/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.4746.93/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deblad/Programming/Computer_Science/ClassRoster
+CMAKE_SOURCE_DIR = /home/deblad/Projects/ClassRoster-WGU
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug
+CMAKE_BINARY_DIR = /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ClassRoster.dir/depend.make
@@ -68,42 +68,42 @@ include CMakeFiles/ClassRoster.dir/flags.make
 
 CMakeFiles/ClassRoster.dir/main.cpp.o: CMakeFiles/ClassRoster.dir/flags.make
 CMakeFiles/ClassRoster.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClassRoster.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassRoster.dir/main.cpp.o -c /home/deblad/Programming/Computer_Science/ClassRoster/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClassRoster.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassRoster.dir/main.cpp.o -c /home/deblad/Projects/ClassRoster-WGU/main.cpp
 
 CMakeFiles/ClassRoster.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassRoster.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deblad/Programming/Computer_Science/ClassRoster/main.cpp > CMakeFiles/ClassRoster.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deblad/Projects/ClassRoster-WGU/main.cpp > CMakeFiles/ClassRoster.dir/main.cpp.i
 
 CMakeFiles/ClassRoster.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassRoster.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deblad/Programming/Computer_Science/ClassRoster/main.cpp -o CMakeFiles/ClassRoster.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deblad/Projects/ClassRoster-WGU/main.cpp -o CMakeFiles/ClassRoster.dir/main.cpp.s
 
 CMakeFiles/ClassRoster.dir/student.cpp.o: CMakeFiles/ClassRoster.dir/flags.make
 CMakeFiles/ClassRoster.dir/student.cpp.o: ../student.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClassRoster.dir/student.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassRoster.dir/student.cpp.o -c /home/deblad/Programming/Computer_Science/ClassRoster/student.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClassRoster.dir/student.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassRoster.dir/student.cpp.o -c /home/deblad/Projects/ClassRoster-WGU/student.cpp
 
 CMakeFiles/ClassRoster.dir/student.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassRoster.dir/student.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deblad/Programming/Computer_Science/ClassRoster/student.cpp > CMakeFiles/ClassRoster.dir/student.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deblad/Projects/ClassRoster-WGU/student.cpp > CMakeFiles/ClassRoster.dir/student.cpp.i
 
 CMakeFiles/ClassRoster.dir/student.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassRoster.dir/student.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deblad/Programming/Computer_Science/ClassRoster/student.cpp -o CMakeFiles/ClassRoster.dir/student.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deblad/Projects/ClassRoster-WGU/student.cpp -o CMakeFiles/ClassRoster.dir/student.cpp.s
 
 CMakeFiles/ClassRoster.dir/roster.cpp.o: CMakeFiles/ClassRoster.dir/flags.make
 CMakeFiles/ClassRoster.dir/roster.cpp.o: ../roster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClassRoster.dir/roster.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassRoster.dir/roster.cpp.o -c /home/deblad/Programming/Computer_Science/ClassRoster/roster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClassRoster.dir/roster.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassRoster.dir/roster.cpp.o -c /home/deblad/Projects/ClassRoster-WGU/roster.cpp
 
 CMakeFiles/ClassRoster.dir/roster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassRoster.dir/roster.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deblad/Programming/Computer_Science/ClassRoster/roster.cpp > CMakeFiles/ClassRoster.dir/roster.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/deblad/Projects/ClassRoster-WGU/roster.cpp > CMakeFiles/ClassRoster.dir/roster.cpp.i
 
 CMakeFiles/ClassRoster.dir/roster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassRoster.dir/roster.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deblad/Programming/Computer_Science/ClassRoster/roster.cpp -o CMakeFiles/ClassRoster.dir/roster.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/deblad/Projects/ClassRoster-WGU/roster.cpp -o CMakeFiles/ClassRoster.dir/roster.cpp.s
 
 # Object files for target ClassRoster
 ClassRoster_OBJECTS = \
@@ -119,7 +119,7 @@ ClassRoster: CMakeFiles/ClassRoster.dir/student.cpp.o
 ClassRoster: CMakeFiles/ClassRoster.dir/roster.cpp.o
 ClassRoster: CMakeFiles/ClassRoster.dir/build.make
 ClassRoster: CMakeFiles/ClassRoster.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ClassRoster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ClassRoster"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClassRoster.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -131,6 +131,6 @@ CMakeFiles/ClassRoster.dir/clean:
 .PHONY : CMakeFiles/ClassRoster.dir/clean
 
 CMakeFiles/ClassRoster.dir/depend:
-	cd /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/deblad/Programming/Computer_Science/ClassRoster /home/deblad/Programming/Computer_Science/ClassRoster /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug /home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles/ClassRoster.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/deblad/Projects/ClassRoster-WGU /home/deblad/Projects/ClassRoster-WGU /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug /home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles/ClassRoster.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ClassRoster.dir/depend
 

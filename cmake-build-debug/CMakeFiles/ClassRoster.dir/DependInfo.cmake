@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/deblad/Programming/Computer_Science/ClassRoster/main.cpp" "/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles/ClassRoster.dir/main.cpp.o"
-  "/home/deblad/Programming/Computer_Science/ClassRoster/roster.cpp" "/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles/ClassRoster.dir/roster.cpp.o"
-  "/home/deblad/Programming/Computer_Science/ClassRoster/student.cpp" "/home/deblad/Programming/Computer_Science/ClassRoster/cmake-build-debug/CMakeFiles/ClassRoster.dir/student.cpp.o"
+  "/home/deblad/Projects/ClassRoster-WGU/main.cpp" "/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles/ClassRoster.dir/main.cpp.o"
+  "/home/deblad/Projects/ClassRoster-WGU/roster.cpp" "/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles/ClassRoster.dir/roster.cpp.o"
+  "/home/deblad/Projects/ClassRoster-WGU/student.cpp" "/home/deblad/Projects/ClassRoster-WGU/cmake-build-debug/CMakeFiles/ClassRoster.dir/student.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
