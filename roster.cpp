@@ -30,21 +30,22 @@ Roster::~Roster()
 }
 
 
-void Roster::add(string& studentID, string& firstName, string& lastName, string& emailAddress,
+void Roster::add(const string& studentID, const string& firstName, const string& lastName, const string& emailAddress,
                  int age, int daysInCourse1, int daysInCourse2, int daysInCourse3, DegreeProgram degreeProgram)
 {
-    /* The daysInCourseArray[] constructs an array using the daysInCourse parameters given to the function.
-     * Then, for the rest of the parameters (and the newly constructed daysInCourseArray[]), it instantiates a new
-     * Student class that is intended to be added to the classRosterArray of pointers. */
     int daysInCourseArray[3] = {daysInCourse1, daysInCourse2, daysInCourse3};
-    auto *addStudent = new Student(studentID, firstName, lastName, emailAddress, age, daysInCourseArray, degreeProgram);
 
-    /* The function treats the roster like a stack. rosterIndex points to a different index in the classRosterArray
-     * each time the function is run. rosterIndex starts at -1, as defined by the constructor, and this function
-     * increments it to 0 before performing an operation using the local student instance variable. The next time the
-     * function is run, rosterIndex should still be pointing to 0, and so the function will increment it once again to 1.
-     * This creates an iterable approach despite the asynchronous connections to the function each time. */
-    if (rosterIndex - 1 < 5) *classRosterArray[++rosterIndex] = *addStudent;
+    try
+    {
+        if (rosterIndex + 1 < 5) classRosterArray[++rosterIndex] = new Student(studentID, firstName, lastName, emailAddress,
+                                                                               age, daysInCourseArray, degreeProgram);
+        else throw runtime_error("Index out of range.");
+    }
+    catch(runtime_error& except)
+    {
+        cout << except.what() << endl;
+        cout << "Cannot add anymore students to the roster." << endl;
+    }
 }
 
 
@@ -140,18 +141,18 @@ void Roster::printInvalidEmails()
 
 void Roster::printByDegreeProgram(DegreeProgram degreeProgram)
 {
-    DegreeProgram studentsDegrees[5];
+    DegreeProgram studentDegree[5]; // An array that obtains degree information for each student.
     bool matchingDegrees[5]; // A boolean array that tells the function which students have the correct DegreeProgram.
     int index;
 
     // Grab each degree program in the class roster array, and add it to a local variable for easier indexing.
-    for(index=0; index<5;index++) studentsDegrees[index] = classRosterArray[index]->getDegreeProgram();
+    for(index=0; index<5;index++) studentDegree[index] = classRosterArray[index]->getDegreeProgram();
 
     /* Assign a boolean value to each index of the matchingDegrees[] array. They correspond a respective index in
      * the classRosterArray. */
     for(index=0;index<5;index++)
     {
-        if(studentsDegrees[index] == degreeProgram) matchingDegrees[index] = true;
+        if(studentDegree[index] == degreeProgram) matchingDegrees[index] = true;
         else matchingDegrees[index] = false;
     }
 

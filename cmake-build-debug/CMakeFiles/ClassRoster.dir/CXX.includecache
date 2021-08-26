@@ -8,14 +8,6 @@
 
 /home/deblad/Projects/ClassRoster-WGU/degree.h
 
-/home/deblad/Projects/ClassRoster-WGU/main.cpp
-iostream
--
-string
--
-roster.h
-/home/deblad/Projects/ClassRoster-WGU/roster.h
-
 /home/deblad/Projects/ClassRoster-WGU/roster.cpp
 iostream
 -
@@ -46,6 +38,8 @@ student.h
 iostream
 -
 string
+-
+utility
 -
 student.h
 /home/deblad/Projects/ClassRoster-WGU/student.h

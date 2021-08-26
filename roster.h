@@ -18,7 +18,7 @@ public:
     ~Roster();
 
 
-    void add(string&, string&, string&, string&, int, int, int, int, DegreeProgram);
+    void add(const string&, const string&, const string&, const string&, int, int, int, int, DegreeProgram);
     void remove (const string&);
     void printAll();
     void printAverageDaysInCourse(const string&);
