@@ -18,6 +18,7 @@ Roster::Roster()
     // This defines the classRosterArray of pointers and rosterIndex corresponds to a single index within the array.
     for (auto& index : classRosterArray) index = nullptr;
     rosterIndex = -1;
+    classRosterSize = 5;
 }
 
 
@@ -37,8 +38,8 @@ void Roster::add(const string& studentID, const string& firstName, const string&
 
     try
     {
-        if (rosterIndex + 1 < 5) classRosterArray[++rosterIndex] = new Student(studentID, firstName, lastName, emailAddress,
-                                                                               age, daysInCourseArray, degreeProgram);
+        if (rosterIndex + 1 < 5) classRosterArray[++rosterIndex] =
+                new Student(studentID, firstName, lastName, emailAddress, age, daysInCourseArray, degreeProgram);
         else throw runtime_error("Index out of range.");
     }
     catch(runtime_error& except)
@@ -62,10 +63,18 @@ void Roster::remove(const string& studentID)
          * has a matching studentID with the one in the parameter. */
         if (deleteIndex == -1) throw runtime_error("Function, getByID(), returned -1. No matching student was found.");
         /* However, if getByID() returns a positive integer, then, starting at the index to delete, deleteIndex;
-         * overwrite the data with data from the next index until the loop reaches the end of the array -1
-         * (because it is removing an element right now). */
-        for (long unsigned int index=deleteIndex; index < sizeof(classRosterArray)-1; index++)
-            classRosterArray[index] = classRosterArray[index + 1];
+         * overwrite the data with data from the next index until the loop reaches the end of the array.
+         * Finally, remove that index from the classRosterArray. */
+        else
+        {
+            string name = classRosterArray[deleteIndex]->getFirstName() + ' ' + classRosterArray[deleteIndex]->getLastName();
+            cout << "Removing student, " << name << ", from the class roster. Please wait...\n";
+
+            for (unsigned int index=deleteIndex; index < classRosterSize; index++)
+                classRosterArray[index] = classRosterArray[index + 1];
+            this->classRosterSize--;
+            cout << "Successfully removed, " << name << " from the class roster." << endl << endl;
+        }
     }
     /* The function catches an exception if no matching student was found. This is it's exiting output when an
      * exception is found.*/
@@ -97,7 +106,7 @@ void Roster::printAverageDaysInCourse(const string& studentID)
         * a matching studentID with the one in the parameter. */
        if (studentIndex == -1) throw runtime_error("Function, getByID(), returned -1. No matching student was found.");
        // Output the average days in course for the student, formatted as such.
-       printf("The average days in course for %s is %d.", classRosterArray[studentIndex]->getFirstName().c_str(),
+       printf("The average days in course for %s is %d.\n", classRosterArray[studentIndex]->getFirstName().c_str(),
               classRosterArray[studentIndex]->getAverageDaysInCourse());
    }
    catch(runtime_error& except)
@@ -129,7 +138,7 @@ void Roster::printInvalidEmails()
     for (index=0; index<5; index++) validEmails[index] = regex_match(studentEmails[index], validEmailCriteria);
 
     // Now, print out the invalid emails using the data collected by the last two for loops.
-    cout << "The following emails have failed to match proper email format:\n" << endl;
+    cout << "The following emails have failed to match proper email format:" << endl;
     for (index=0; index<5; index++)
     {
         /* The function only prints out emails whose corresponding index in the validEmails boolean array
@@ -158,19 +167,29 @@ void Roster::printByDegreeProgram(DegreeProgram degreeProgram)
 
     /* Output a heading, and then iterate through the matchingDegrees[] array and print the information for each
      * student that has a matching degree using the student's print() method. */
-    cout << "Students obtaining a(n) " << degreeProgram << "degree are: " << endl;
+    switch(degreeProgram)
+    {
+        case 0:
+            cout << "\nStudents obtaining a Security degree are: " << endl;
+            break;
+        case 1:
+            cout << "\nStudents obtaining a Netoworking degree are: " << endl;
+            break;
+        case 2:
+            cout << "\nStudents obtaining a Software degree are: " << endl;
+    }
     for(index=0; index<5; index++)
     {
         if (matchingDegrees[index]) classRosterArray[index]->print();
-        cout << endl;
     }
+    std::cout << std::endl;
 
 }
 
 
 int Roster::getByID(const string& studentID)
 {
-    for (int index=0;index<5;index++)
+    for (int index=0;index<classRosterSize;index++)
     {
         /* Check every index in the classRosterArray and see if its studentID matches the one provided to the function
          * as a parameter. If the function finds a match, the index is sent back to the function that called it. If no

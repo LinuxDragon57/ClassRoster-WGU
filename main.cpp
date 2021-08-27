@@ -31,7 +31,9 @@ int main()
     classRoster.add( "A5", "Tyler", "Gautney", "tyler.gautney@codedragon.dev", 22, 30, 35, 40, SOFTWARE);
 
     classRoster.printAll();
+    std::cout << std::endl;
     classRoster.printInvalidEmails();
+    std::cout << std::endl;
 
     // Loop through classRosterArray and for each element:
     // classRoster.printAverageDaysInCourse(current_object's studentID)
