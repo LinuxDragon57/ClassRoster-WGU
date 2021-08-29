@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/ClassRoster.dir/main.cpp.o CMakeFiles/ClassRoster.dir/student.cpp.o CMakeFiles/ClassRoster.dir/roster.cpp.o -o ClassRoster 
