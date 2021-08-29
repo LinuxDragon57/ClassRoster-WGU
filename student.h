@@ -29,6 +29,7 @@ public:
     string getStudentID() const;
     string getFirstName() const;
     string getLastName() const;
+    string getFullName() const;
     string getEmail() const;
     unsigned int getAge() const;
     int getAverageDaysInCourse() const;
