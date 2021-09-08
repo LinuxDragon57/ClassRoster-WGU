@@ -64,19 +64,19 @@ void parseStudentData(Roster& obj)
              "A5,Tyler,Gautney,tyler.gautney@codedragon.dev,22,30,35,40,SOFTWARE"
             };
     char d = ','; //d for delimiter...
-    string studentID;
-    string firstName;
-    string lastName;
-    string email;
+    std::string studentID;
+    std::string firstName;
+    std::string lastName;
+    std::string email;
     int age;
     int daysInCourse[3];
     DegreeProgram degree;
 
-    std::istringstream input;
-    string tempStr;
+    std::string tempStr;
 
-    for (auto& index : studentData)
+    for (const auto & index : studentData)
     {
+        std::istringstream input;
         input.str(index);
         std::getline(input, studentID, d);
         std::getline(input, firstName, d);
