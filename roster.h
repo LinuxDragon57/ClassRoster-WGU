@@ -31,7 +31,6 @@ public:
 private:
     Student* classRosterArray[5]{};
     int rosterIndex;
-    int classRosterSize;
 };
 
 

@@ -11,7 +11,7 @@ using namespace std;
 class Student {
 public:
 
-    //The following functions are the default constructor, overloaded constructor, and the destructor - respectively.
+    //The default constructor and overloaded constructor, respectively.
     Student();
     Student(string, string, string, string, int, int*, DegreeProgram);
 
