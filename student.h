@@ -16,7 +16,7 @@ public:
     Student(string, string, string, string, int, int*, DegreeProgram);
 
 
-//The following are mutators for each instance variable
+    //The following are mutators for each instance variable
     void setStudentID(string);
     void setFirstName(string);
     void setLastName(string);

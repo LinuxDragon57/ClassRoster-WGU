@@ -29,7 +29,7 @@ public:
 
 
 private:
-    Student* classRosterArray[5]{};
+    Student* classRosterArray[5];
     int rosterIndex;
 };
 
